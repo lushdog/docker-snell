@@ -1,0 +1,11 @@
+version: '2.4'
+services:
+  docker-snell:
+    image: trancelife/snell-docker:latest
+    container_name: snell
+    restart: always
+    network_mode: "host"
+    ports:
+      - "10990:10990"
+    volumes:
+      - ./config.json:/snell/config/config.json
