@@ -8,4 +8,4 @@ services:
     ports:
       - "10990:10990"
     volumes:
-      - ./config.json:/snell/config/config.json
+      - ./config:/snell/configbk/
